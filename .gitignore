@@ -1,4 +1,5 @@
 # Ignore build output directory
+/*/_ide
 /*_system
 /kr260_test
 /RemoteSystemsTempFiles
