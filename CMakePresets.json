@@ -1,0 +1,37 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+      "major": 3,
+      "minor": 15,
+      "patch": 0
+    },
+    "configurePresets": [
+      {
+        "name": "native",
+        "displayName": "Native x86_64 Build",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/build/build-native",
+        "cacheVariables": {
+          "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/tools/cmake/toolchain-ubuntu.cmake"
+        }
+      },
+      {
+        "name": "linux arm",
+        "displayName": "Linux ARM Build",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/build/build-linux-arm",
+        "cacheVariables": {
+          "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/tools/cmake/toolchain-linux-arm.cmake"
+        }
+      },
+      {
+        "name": "bare",
+        "displayName": "Baremetal Build",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/build/build-bare",
+        "cacheVariables": {
+          "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/tools/cmake/toolchain-baremetal.cmake"
+        }
+      }
+    ]
+}

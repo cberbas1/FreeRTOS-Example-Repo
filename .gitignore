@@ -1,18 +1,7 @@
 # Ignore build output directory/*_system
-/*_system
-/kr260_test
-/RemoteSystemsTempFiles
+/build
 /build/*
-/_ide
-/_ide/*
-/src/.cache
-/src/.compile_commands
-/export
-/hello_world
-/logs
-/zcu106
-/kr260
-/.cache
+/tools/doxygen/output
 
 # Prerequisites
 *.d
